@@ -22,7 +22,7 @@ stages{
      stage('issues')
         {
             steps{
-             contributors()
+             gitlab_issue()
             // influx()
 
                  }
