@@ -27,5 +27,13 @@ stages{
 
                  }
          }
+     stage('issues')
+        {
+            steps{
+             gitlab_mergerequest()
+            // influx()
+
+                 }
+         }
          }
          }
