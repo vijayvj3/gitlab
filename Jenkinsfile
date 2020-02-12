@@ -27,7 +27,7 @@ stages{
 
                  }
          }
-     stage('issues')
+     stage('mergerequest')
         {
             steps{
              gitlab_mergerequest()
