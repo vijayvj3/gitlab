@@ -3,11 +3,11 @@ pipeline
 {
     agent any
 stages{
- stage('gitlab')
+ stage('commits')
         {
             steps{
              commits()
-             influx()
+            // influx()
 
                  }
          }
@@ -15,7 +15,7 @@ stages{
         {
             steps{
              contributors()
-             influx()
+            // influx()
 
                  }
          }
