@@ -19,5 +19,13 @@ stages{
 
                  }
          }
+     stage('issues')
+        {
+            steps{
+             contributors()
+            // influx()
+
+                 }
+         }
          }
          }
