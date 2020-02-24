@@ -3,7 +3,7 @@ pipeline
 {
     agent any
 stages{
- stage('commits')
+/* stage('commits')
         {
             steps{
              commits()
@@ -34,6 +34,11 @@ stages{
             // influx()
 
                  }
+         }*/
+    stage('user_commits'){
+        steps{
+            array_gitlab()
          }
          }
-         }
+}
+}
