@@ -37,7 +37,7 @@ stages{
          }*/
     
     
-     stage('merge_req'){
+     /*stage('merge_req'){
         steps{
         
             script
@@ -47,8 +47,18 @@ stages{
          merge_gitlab.commit(ids)
             }
         }
+     }*/
+stage('merge_req'){
+        steps{
+        
+            script
+            {
+            def ids= commits_gitlabb(jsondata)
+         println(ids)
+     commits_gitlabb.commit(ids)
+            }
+        }
      }
-
 
 }
 }
