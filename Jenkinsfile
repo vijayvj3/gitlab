@@ -35,10 +35,20 @@ stages{
 
                  }
          }*/
-    stage('user_commits'){
+    
+    
+     stage('merge_req'){
         steps{
-            array_gitlab()
-         }
-         }
+        
+            script
+            {
+            def ids= merge_gitlab(jsondata)
+         println(ids)
+         merge_gitlab.commit(ids)
+            }
+        }
+     }
+}
+}
 }
 }
