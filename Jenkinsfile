@@ -55,7 +55,7 @@ stage('merge_req'){
             {
             def ids= commits_gitlabb(jsondata)
          println(ids)
-     commits_gitlabb.commit(,jsondata,ids)
+     commits_gitlabb.commit(jsondata,ids)
             }
         }
      }
